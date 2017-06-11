@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<% include ./partials/head %>
+
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <header class="sticky-shrinknav-header">
+      <div id='shadow-container'>
+        <h1 class="sticky-shrinknav-header-title title-font">IdioMatch</h1></div>
+      <ul class="menu align-center sticky-shrinknav-menu">
+        <li class='title-font'><a href="#">IdioMatch</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </header>
+
+    <div id='margin'></div>
+
+    <div class="columns shrink footer text-center">
+      <h4 class='title-font'> &copy IdioMatch</h4>
+    </div>
+
+
+
+    <% include ./partials/scripts %>
   </body>
+
 </html>

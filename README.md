@@ -1,6 +1,6 @@
 # IdioMatch
 
-PUT PHOTO
+
 
 ## Overview
 **IdioMatch is a matchmaking service that lets you teach a language to another person, and in exchange, be taught a language by that same person!**

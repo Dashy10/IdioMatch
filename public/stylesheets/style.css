@@ -166,6 +166,20 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
   height: 100vh;
 }
 
+.flags {
+  font-size: 10pt;
+}
+
+.flag-image {
+  width: 50px;
+  height: 50px;
+}
+
+.upper-flags {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 @media screen and (max-width: 60em) {
   .container {
     -ms-grid-rows: (1fr)[4];
@@ -175,7 +189,10 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
 
 .grid-1 {
   border: none !important;
-  background-color: white !important;
+  background-image: url('../images/travel_photo.jpeg') !important;
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  /*background-color: black !important;*/
   -ms-grid-column: 1;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -213,41 +230,6 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
   }
 }
 
-.grid-3 {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
-@media screen and (max-width: 60em) {
-  .grid-3 {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    -ms-grid-row: 3;
-    grid-row: 3;
-  }
-}
-
-.grid-4 {
-  -ms-grid-column: 3;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
-@media screen and (max-width: 60em) {
-  .grid-4 {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    -ms-grid-row: 4;
-    grid-row: 4;
-  }
-}
 
 .callout {
   margin: 0;

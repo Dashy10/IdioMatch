@@ -1,5 +1,5 @@
 // testing testing....
-console.log('Is connected');
+console.log('style.js Is connected');
 
 // modal functions
 function showLogin() {

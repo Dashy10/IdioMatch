@@ -12,7 +12,7 @@
 **Here is how it works in just 3 simple steps:**
 
 1. Tell us what languages you are fluent in and what languages you are trying to learn.
-
+ 
 2. Get connected with someone who is learning your language, but can also teach you theirs.
 
 3. Start communicating via WhatsApp, Skype, or email address and begin learning a new language with a native speaker!
@@ -87,8 +87,12 @@ For each matching_user; render
 
 ```
 
+## Project Timetable
+
 
 ## Database Structure
+
+<img src='public/images/users_table.png' />
 
 ## Technologies
 
@@ -110,9 +114,17 @@ For each matching_user; render
 - Animate.css
 - Passport.js/Open Auth
 
+## Code Example
 
+## Future Improvements
 
+## Contributing
 
+This project was developed as part of the Web Development Immersive program at General Assembly in NYC, June 2017.
+
+Instructors: Patrick Andre, Joe Keohan, Jon Zachary
+
+TA's: Matt Kersner, Dominic Farquharson, Jonathan Ahrens & Jason Andrada.
 
 ## Author(s)
 

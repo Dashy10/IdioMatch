@@ -1,12 +1,10 @@
 // testing testing....
 console.log('Is connected');
 
-
 // modal functions
 function showLogin() {
-  document.getElementById('login-form').style.display = "block";
-};
-
+  $('#login-form').fadeIn(1300);
+}
 function hideLogin() {
   document.getElementById('login-form').style.display = "none";
 };
@@ -23,7 +21,4 @@ $(function() {
     }
   });
 
-  // function showLogin(){
-  //   $()
-  // }
 });

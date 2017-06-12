@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html>
-<% include ./partials/match_head%>
+<% include ./partials/match_head %>
 
   <body>
-    <ul class="menu align-center sticky-shrinknav-menu">
-      <li class='title-font' style="font-size:20pt"><a href="/">IdioMatch</a></li>
-      <li class="title-font"><a href="./matches">HOW IT WORKS</a></li>
-      <li class="title-font"><a href="./register">SIGN UP</a></li>
-      <li class="title-font"><a onclick="showLogin()">LOGIN</a></li>
-    </ul>
-
     <form>
-      <div id='login-form' class="sign-in-form title-font">
+      <div id='login-form' class="sign-in-form">
         <h4 class="text-center">Sign In<i class="fa fa-times-circle-o" aria-hidden="true" style="margin-left:130px;" onclick="hideLogin()"></i></h4>
         <label for="sign-in-form-username">Username</label>
         <input type="text" class="sign-in-form-username" id="sign-in-form-username">
@@ -21,14 +14,32 @@
       </div>
     </form>
 
-    <div class="columns shrink footer text-center">
-      <p>Footer</p>
-      <ul class="menu align-center">
-        <li><a href="">Link</a></li>
-        <li><a href="">Link</a></li>
-        <li><a href="">Link</a></li>
-      </ul>
+    <ul class="menu align-center sticky-shrinknav-menu">
+      <li class='title-font' style="font-size:20pt"><a href="/">IdioMatch</a></li>
+      <li class="title-font"><a href="./matches">HOW IT WORKS</a></li>
+      <li class="title-font"><a href="./register">SIGN UP</a></li>
+      <li class="title-font"><a onclick="showLogin()">LOGIN</a></li>
+    </ul>
+
+    <div class="page-wrap">
+
+
+
+  </div>
+
+  <footer class="site-footer">
+    <h3 class='title-font'> &copy IdioMatch</h3>
+    <p class='title-font'> Created by Dashiell Lumas </p>
+    <div class="rounded-social-buttons">
+      <a class="social-button twitter" href="https://twitter.com/DashiellLumas"></a>
+      <a class="social-button linkedin" href="https://www.linkedin.com/in/dashiell-lumas/"></a>
+      <a class="social-button github" href="https://github.com/Dashy10"></a>
     </div>
+  </footer>
+
+
+
+
 
     <% include ./partials/scripts %>
   </body>

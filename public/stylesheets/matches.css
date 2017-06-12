@@ -1,37 +1,6 @@
-/*title-font*/
-
 .title-font {
   font-family: 'Lato', sans-serif;
 }
-
-
-/*navbar styles*/
-
-.sticky-shrinknav-menu {
-  position: absolute;
-  top: 0;
-  height: 3.75rem;
-  line-height: 3.75rem;
-  width: 100%;
-  background-color: rgb(25, 181, 208);
-  transition: all 0.5s ease;
-}
-
-.sticky-shrinknav-menu li {
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-.sticky-shrinknav-menu li:hover {
-  box-shadow: 0 0 0 1px #fefefe;
-}
-
-.sticky-shrinknav-menu a {
-  color: #fefefe;
-}
-
-
-/*end of navbar-styles*/
 
 
 /* BEGIN: LOGIN IN FORM */
@@ -107,10 +76,51 @@
 
 /*END: LOGIN FORM*/
 
+.sticky-shrinknav-menu {
+  position: absolute;
+  top: 0;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  width: 100%;
+  background-color: rgb(25, 181, 208);
+  transition: all 0.5s ease;
+}
 
-/*BEGIN: FOOTER AND SOCIAL MEDIA BUTTONS*/
+.sticky-shrinknav-menu li {
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
 
-.footer {
+.sticky-shrinknav-menu li:hover {
+  box-shadow: 0 0 0 1px #fefefe;
+}
+
+.sticky-shrinknav-menu a {
+  color: #fefefe;
+}
+
+
+/*FOOTER*/
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+.site-footer {
+  text-align: center;
   background-color: rgb(42, 44, 43);
   color: #fff;
 }
@@ -190,43 +200,4 @@
   background: #fefefe;
   border-color: #000000;
 }
-
-
 /*END: FOOTER AND SOCIAL MEDIA BUTTONS*/
-
-.sticky-footer-css {
-  height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.sticky-footer-css-body {
-  overflow: auto;
-}
-
-.sticky-footer-css .header {
-  background-color: #2c3840;
-  height: 10rem;
-  color: #fff;
-  padding: 3rem;
-}
-
-.sticky-footer-css .header .menu a {
-  color: #fff;
-}
-
-.sticky-footer-css .body-content {
-  background-color: #fff;
-}
-
-.sticky-footer-css .footer {
-  height: 10rem;
-  background-color: #2c3840;
-  color: #fff;
-  padding: 3rem;
-}
-
-.sticky-footer-css .footer .menu a {
-  color: #fff;
-}

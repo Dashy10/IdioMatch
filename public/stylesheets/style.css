@@ -12,7 +12,6 @@ body {
 /* BEGIN: LOGIN IN FORM */
 
 .sign-in-form {
-  font-family: 'Lato', sans-serif;
   display: none;
   z-index: 999;
   width: 300px;

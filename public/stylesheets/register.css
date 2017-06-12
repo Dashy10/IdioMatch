@@ -8,6 +8,7 @@
   margin-top: 100px;
 }
 
+
 /*navbar styles*/
 
 .sticky-shrinknav-menu {
@@ -37,10 +38,11 @@
 /*end of navbar-styles*/
 
 
-/*login styles*/
+/* BEGIN: LOGIN IN FORM */
 
 .sign-in-form {
   display: none;
+  z-index: 999;
   width: 300px;
   height: 350px;
   position: fixed;
@@ -50,11 +52,11 @@
   margin-top: -150px;
   padding: 1rem 1.5em;
   border-radius: .5rem;
-  background-color: #3d454f;
+  background-color: rgb(42, 44, 43);
 }
 
 .sign-in-form h4 {
-  color: white;
+  color: rgb(25, 181, 208);
   margin-bottom: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -62,14 +64,14 @@
 
 .sign-in-form label {
   text-transform: uppercase;
-  color: #adadad;
+  color: rgb(25, 181, 208);
   letter-spacing: 1px;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .sign-in-form input {
-  color: white;
+  color: rgb(25, 181, 208);
 }
 
 .sign-in-form input:focus {
@@ -85,7 +87,7 @@
 
 .sign-in-form-button {
   border-radius: 30px;
-  border: 1px solid #fff;
+  border: 1px solid rgb(25, 181, 208);
   color: #fff;
   background-color: transparent;
   text-transform: uppercase;
@@ -96,12 +98,18 @@
 }
 
 .sign-in-form-button:hover {
+  cursor: pointer;
   background-color: rgb(25, 181, 208);
   border-color: rgb(25, 181, 208);
 }
 
+.fa-times-circle-o:hover {
+  color: rgb(25, 181, 208);
+  cursor: pointer;
+}
 
-/*end of login-styles*/
+
+/*END: LOGIN FORM*/
 
 
 /*BEGIN: REGISTRATION FORM*/
@@ -109,6 +117,7 @@
 #login-form {
   margin-bottom: 100px;
 }
+
 .login-box {
   box-shadow: 0 2px 4px rgba(10, 10, 10, 0.4);
   background: #fefefe;

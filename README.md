@@ -1,7 +1,7 @@
 # IdioMatch
 
 
-
+<img src='public/images/idiomatch.png' />
 
 
 ## Overview

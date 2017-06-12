@@ -3,6 +3,17 @@
 <% include ./partials/head %>
 
   <body>
+
+    <form>
+      <div id='login-form' class="sign-in-form">
+        <h4 class="text-center">Sign In</h4>
+        <label for="sign-in-form-username">Username</label>
+        <input type="text" class="sign-in-form-username" id="sign-in-form-username">
+        <label for="sign-in-form-password">Password</label>
+        <input type="text" class="sign-in-form-password" id="sign-in-form-password">
+        <button type="submit" class="sign-in-form-button">Sign In</button>
+      </div>
+    </form>
     <header class="sticky-shrinknav-header">
       <div id='shadow-container'>
         <h1 class="sticky-shrinknav-header-title title-font">IdioMatch</h1></div>
@@ -10,13 +21,10 @@
         <li class='title-font' style="font-size:20pt"><a href="#">IdioMatch</a></li>
         <li class="title-font"><a href="./matches">HOW IT WORKS</a></li>
         <li class="title-font"><a href="#">SIGN UP</a></li>
-        <li class="title-font"><a href="#">LOGIN</a></li>
+        <li class="title-font"><a onclick="showLogin()">LOGIN</a></li>
       </ul>
     </header>
-    <!--Conversation Exchanges with native speakers white  -->
-    <!--What is this thing blue  -->
-    <!--website statistics blue  -->
-    <!--Find an IdioMatch today! with photo cream  -->
+
     <div id='test-margin'></div>
     <div class="container">
       <div id="globe-container" class="grid-1 callout primary">
@@ -113,15 +121,9 @@
       <h3 class='title-font'> &copy IdioMatch</h3>
       <p class='title-font'> Created by Dashiell Lumas </p>
       <div class="rounded-social-buttons">
-        <!-- <a class="social-button facebook" href="#"></a> -->
         <a class="social-button twitter" href="https://twitter.com/DashiellLumas"></a>
         <a class="social-button linkedin" href="https://www.linkedin.com/in/dashiell-lumas/"></a>
-        <!-- <a class="social-button youtube" href="#"></a> -->
-        <!-- <a class="social-button instagram" href="#"></a> -->
-        <!-- <a class="social-button pinterest" href="#"></a> -->
-        <!-- <a class="social-button google-plus" href="#"></a> -->
         <a class="social-button github" href="https://github.com/Dashy10"></a>
-        <!-- <a class="social-button tumblr" href="#"></a> -->
       </div>
     </div>
 

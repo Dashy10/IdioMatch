@@ -2,11 +2,28 @@
 <html>
 <% include ./partials/match_head %>
 
-<body>
-  <h1>Hello World</h1>
-  <a href="/">Back to base</a>
+  <body>
+    <ul class="menu align-center sticky-shrinknav-menu">
+      <li class='title-font' style="font-size:20pt"><a href="/">IdioMatch</a></li>
+      <li class="title-font"><a href="./matches">HOW IT WORKS</a></li>
+      <li class="title-font"><a href="#">SIGN UP</a></li>
+      <li class="title-font"><a onclick="showLogin()">LOGIN</a></li>
+    </ul>
 
-<% include ./partials/scripts %>
-</body>
+    <form>
+      <div id='login-form' class="sign-in-form">
+        <h4 class="text-center">Sign In<i class="fa fa-times-circle-o" aria-hidden="true" style="margin-left:130px;" onclick="hideLogin()"></i></h4> 
+        <label for="sign-in-form-username">Username</label>
+        <input type="text" class="sign-in-form-username" id="sign-in-form-username">
+        <label for="sign-in-form-password">Password</label>
+        <input type="text" class="sign-in-form-password" id="sign-in-form-password">
+        <button type="submit" class="sign-in-form-button">Sign In</button>
+      </div>
+    </form>
+
+
+
+    <% include ./partials/scripts %>
+  </body>
 
 </html>

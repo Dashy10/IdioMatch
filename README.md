@@ -2,6 +2,8 @@
 
 
 
+
+
 ## Overview
 **IdioMatch is a matchmaking service that lets you teach a language to another person, and in exchange, be taught a language by that same person!**
 
@@ -14,6 +16,11 @@
 2. Get connected with someone who is learning your language, but can also teach you theirs.
 
 3. Start communicating via WhatsApp, Skype, or email address and begin learning a new language with a native speaker!
+
+## Links
+[Github Repo](https://github.com/Dashy10/idiomatch)
+
+[Live Application](http://idiomatch.herokuapp.com/)
 
 
 ## User Stories
@@ -34,6 +41,53 @@ inputing my name, main language, and learning language.
 
 ## Pseudocode
 
+**Filtration System:**
+
+- Six language filters
+
+- Select one main language from six languages
+
+- Select one learning language from the same six languages
+
+- Click a filter button that will make an axios.get call to the imd (idiomatch database)
+
+##### Logic for filtering through selections
+
+```
+If selectedLanguage = mainLanguage.english 
+					&& 
+selectedLearningLanguage = learningLanguage.spanish
+
+
+Display from users table the following data:
+
+[Profile_pic;username;main_language;location;
+learning_language; skype; email address; WhatsApp number] 
+
+WHERE 
+mainLanguage.language = mainLanguage.spanish 
+						&&
+learningLanguage.language = learningLanguage.english
+```
+
+##### Rendering the data on the front-end
+
+```
+For each matching_user; render
+
+<div class='user-card'>
+<img>users.profile_pic </img>
+<h4>users.username</h4>
+<p> Main Language <span>users.mainLanguage</span></p>
+<p>Learning Language <span>users.learningLanguage/span></p>
+<p>Skype <span>users.skype</span></p>
+<p>Email Address <span>users.email</span></p>
+<p>Learning Language<span>users.WhatsApp</span></p>
+</div>
+
+```
+
+
 ## Database Structure
 
 ## Technologies
@@ -48,12 +102,15 @@ inputing my name, main language, and learning language.
 - Postman
 - Postico
 - jQuery
-- Animate.css
-- GoogleMaps API
-- IdioMatch API
-- Passport.js/Open Auth
 - Foundation
-- Bootstrap
+- IdioMatch API
+
+##### Additional Features
+- GoogleMaps API
+- Animate.css
+- Passport.js/Open Auth
+
+
 
 
 

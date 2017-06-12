@@ -22,4 +22,8 @@ $(function() {
       $("body").removeClass("sticky-shrinknav-wrapper");
     }
   });
+
+  // function showLogin(){
+  //   $()
+  // }
 });

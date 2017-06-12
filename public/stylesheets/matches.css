@@ -86,7 +86,7 @@
 }
 
 .sign-in-form-button:hover {
-  background-color: #44c8ed;
-  border-color: #44c8ed;
+  background-color: rgb(25, 181, 208);
+  border-color: rgb(25, 181, 208);
 }
 /*end of login-styles*/

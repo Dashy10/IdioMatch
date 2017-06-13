@@ -22,28 +22,28 @@
     </ul>
 
     <div class="page-wrap">
-      <form class="hero-search-filter-form" action="">
+      <%# <form class="hero-search-filter-form" action="">
         <label for="findmain"> Teaching</label>
         <input id="findmain" class="hero-search-filter-form-find" type="text" />
         <div class="divider">&nbsp;</div>
         <label for="findlearning">Learning</label>
         <input id="findlearning" class="hero-search-filter-form-near" type="text" />
         <button class="button" onclick="getAllUsers()"><i class="fa fa-search"></i></button>
-      </form>
-      <div id='clear-flags'></div>
-      <div class="title-font upper-flags margin-left-flags" style="color:rgb(25, 181, 208);">
-        <img id='french-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/french_flag.png" />French
-        <img id='english-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/american_flag.png" />English
-        <img id='spanish-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/spain_flag.png" />Spanish
-        <img id='russian-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/russia_flag.png" />Russian
-        <img id='icelandic-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/iceland_flag.png" />Icelandic
-        <img id='czech-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/czech_flag.png" />Czech
-      </div>
-      <div id='data-container' class='title-font'>
-        <% if(data){ %>
-          <% include ./partials/user_profiles %>
-            <%} %>
-      </div>
+      </form>%>
+        <div id='clear-flags'></div>
+        <div class="title-font upper-flags margin-left-flags" style="color:rgb(25, 181, 208);">
+          <img id='french-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/french_flag.png" onclick="showFrench()" />French
+          <img id='english-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/american_flag.png" onclick="showEnglish()" />English
+          <img id='spanish-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/spain_flag.png" onclick="showSpanish()" />Spanish
+          <img id='russian-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/russia_flag.png" onclick="showRussian()" />Russian
+          <img id='icelandic-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/iceland_flag.png" onclick="showIcelandic()" />Icelandic
+          <img id='czech-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/czech_flag.png" onclick="showCzech()" />Czech
+        </div>
+        <div id='data-container' class='title-font'>
+          <% if(data){ %>
+            <% include ./partials/user_profiles %>
+              <%} %>
+        </div>
     </div>
     <footer class="site-footer">
       <h3 class='title-font'> &copy IdioMatch</h3>
@@ -54,9 +54,6 @@
         <a class="social-button github" href="https://github.com/Dashy10"></a>
       </div>
     </footer>
-
-
-
 
 
     <% include ./partials/scripts %>

@@ -17,6 +17,10 @@
   height: 100px;
 }
 
+.flag-image-match:hover {
+  cursor: pointer;
+}
+
 .users-container {
   margin: 15px;
   text-align: center;
@@ -24,7 +28,9 @@
   background-color: rgb(25, 181, 208);
   width: 300px;
 }
-
+.users-container:hover {
+  cursor: pointer;
+}
 #clear-flags {
   margin-bottom: 50px;
 }

@@ -1,9 +1,13 @@
 \c idiomatch_db;
 
+INSERT INTO users (username,password,email,main_language,learning_language,skype,whatsapp,location)
+  VALUES
+  ('GainTrain','123','gaintrain@gmail.com','english','icelandic','gainskype1','347123456','Queens');
+
+
 INSERT INTO users (username,password,email,main_language,learning_language,skype,whatsapp)
   VALUES
   -- english
-  ('GainTrain','123','gaintrain@gmail.com','english','icelandic','gainskype1','347123456'),
   ('BossShauna','123','bossShauna@gmail.com','english','french','shaunaskype1','347123456'),
   ('JayWong','123','jwong@gmail.com','english','spanish','james_skype1','347123456'),
   ('naeohmi','123','naeohmi@gmail.com','english','russian','naeohmiskype1','347123456'),

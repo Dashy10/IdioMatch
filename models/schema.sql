@@ -14,5 +14,6 @@ CREATE TABLE users
   learning_language VARCHAR(255),
   skype VARCHAR(255),
   whatsapp VARCHAR(12),
-  profile_pic TEXT
+  profile_pic TEXT,
+  location TEXT
 );

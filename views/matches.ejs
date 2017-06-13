@@ -21,15 +21,8 @@
       <li class="title-font"><a onclick="showLogin()">LOGIN</a></li>
     </ul>
 
-    <div class="page-wrap">
-      <%# <form class="hero-search-filter-form" action="">
-        <label for="findmain"> Teaching</label>
-        <input id="findmain" class="hero-search-filter-form-find" type="text" />
-        <div class="divider">&nbsp;</div>
-        <label for="findlearning">Learning</label>
-        <input id="findlearning" class="hero-search-filter-form-near" type="text" />
-        <button class="button" onclick="getAllUsers()"><i class="fa fa-search"></i></button>
-      </form>%>
+      <div class="page-wrap">
+
         <div id='clear-flags'></div>
         <div class="title-font upper-flags margin-left-flags" style="color:rgb(25, 181, 208);">
           <img id='french-flag-users' class='flag-image-match hvr-wobble-vertical' src="../images/french_flag.png" onclick="showFrench()" />French
@@ -44,19 +37,24 @@
             <% include ./partials/user_profiles %>
               <%} %>
         </div>
-    </div>
-    <footer class="site-footer">
-      <h3 class='title-font'> &copy IdioMatch</h3>
-      <p class='title-font'> Created by Dashiell Lumas </p>
-      <div class="rounded-social-buttons">
-        <a class="social-button twitter" href="https://twitter.com/DashiellLumas"></a>
-        <a class="social-button linkedin" href="https://www.linkedin.com/in/dashiell-lumas/"></a>
-        <a class="social-button github" href="https://github.com/Dashy10"></a>
       </div>
-    </footer>
+      <%# <div id='map'></div>%>
 
 
-    <% include ./partials/scripts %>
+
+        <footer class="site-footer">
+          <h3 class='title-font'> &copy IdioMatch</h3>
+          <p class='title-font'> Created by Dashiell Lumas </p>
+          <div class="rounded-social-buttons">
+            <a class="social-button twitter" href="https://twitter.com/DashiellLumas"></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/in/dashiell-lumas/"></a>
+            <a class="social-button github" href="https://github.com/Dashy10"></a>
+          </div>
+        </footer>
+
+        <% include ./partials/scripts %>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-55CNX8MDhW45JDKkn8WMdPyNpGlHbBQ&callback=initMap">
+          </script>
   </body>
 
 </html>

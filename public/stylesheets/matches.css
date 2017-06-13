@@ -2,6 +2,19 @@
   font-family: 'Lato', sans-serif;
 }
 
+
+#map {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  height: 200px;
+  width: 250px;
+}
+/*.page-wrap{
+  display: none;
+}
+.site-footer {
+  display: none;
+}*/
 #data-container {
   margin: 0 auto;
   display: flex;

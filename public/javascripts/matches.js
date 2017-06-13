@@ -88,24 +88,17 @@ function showCzech() {
   $('.french').css("display", "none");
 };
 
-// function getAllUsers() {
-//   let allusers = 'http://localhost:3000/api/users'
-//   axios.get(allusers).then(function(res) {
-//     let allData = res.data.data;
-//     for(let i = 0; i < allData.length; i++){
-//
-//     }
-//
-//
-//     allData.forEach(function(arrayItem) {
-//       console.log(arrayItem.username);
-//       console.log(arrayItem.main_language);
-//       console.log(arrayItem.learning_language);
-//       console.log(arrayItem.email);
-//       console.log(arrayItem.skype);
-//       console.log(arrayItem.whatsapp);
-//
-//     });
-//
-//   });
-// };
+function initMap() {
+  var uluru = {
+    lat: 40.7388,
+    lng: -73.9815
+  };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}

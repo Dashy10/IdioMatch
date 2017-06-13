@@ -28,9 +28,13 @@
         <div class="divider">&nbsp;</div>
         <label for="findlearning">Learning</label>
         <input id="findlearning" class="hero-search-filter-form-near" type="text" />
-        <button class="button"><i class="fa fa-search"></i></button>
+        <button class="button" onclick="getAllUsers()"><i class="fa fa-search"></i></button>
       </form>
-
+      <div id='users-container'>
+        <% if(data){ %>
+          <% include ./partials/user_profiles %>
+        <%} %>
+      </div>
     </div>
 
     <footer class="site-footer">

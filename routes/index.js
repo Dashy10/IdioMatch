@@ -9,9 +9,8 @@ router.get('/', function(req, res, next) {
   res.render('index', {title: 'Express'});
 });
 
-router.get('/matches', function(req, res, next) {
-  res.render('matches', {title: 'Express'});
-});
+router.get('/matches', db.getAllUsers);
+
 
 router.get('/register', function(req, res, next) {
   res.render('register', {title: 'Express'});

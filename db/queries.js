@@ -12,15 +12,8 @@ var db = pgp(connString);
 getAllUsers = (req,res,next) => {
   db.any('SELECT * FROM users')
   .then(function(data){
-    res.status(200)
-    .json({
-      status: 'success',
-      data: data,
-      message: 'Here are all the users'
-    });
-  })
-  .catch(function(err){
-    return next(err);
+    res.render('matches', {title:"Express", data: data})
+    console.log((data[0].username));
   });
 };
 

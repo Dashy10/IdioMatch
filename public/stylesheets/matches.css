@@ -2,6 +2,25 @@
   font-family: 'Lato', sans-serif;
 }
 
+#data-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*border: 5px solid black;*/
+  width: 1000px;
+  margin-top: 50px;
+  color: white;
+}
+
+.users-container {
+  margin: 5px;
+  text-align: center;
+  border-radius: 4%;
+  background-color: rgb(25, 181, 208);
+  width: 300px;
+}
+
+
 /* BEGIN: LOGIN IN FORM */
 
 .sign-in-form {

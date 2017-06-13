@@ -1,8 +1,10 @@
 <% for (let i = 0; i <data.length; i++){ %>
-  <h4><%= data[i].username %></h4>
+  <div class="users-container">
+  <h4 class="user-title title-font"><%= data[i].username %></h4>
   <p> Is fluent in <%= data[i].main_language %></p>
   <p> Is learning <%= data[i].learning_language %></p>
   <p> <%= data[i].email %></p>
   <p> <%= data[i].skype %></p>
   <p> <%= data[i].whatsapp %></p>
+  </div>
  <% } %>

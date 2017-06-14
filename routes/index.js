@@ -16,5 +16,10 @@ router.get('/register', function(req, res, next) {
   res.render('register', {title: 'Express'});
 });
 
+router.get('/profile', function(req, res, next) {
+  res.render('profile', {title: 'Express'});
+});
+
+
 // api routes
 module.exports = router;

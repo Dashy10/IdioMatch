@@ -18,7 +18,7 @@ authRouter.post('/register', (req, res, next)  => {
     req.login(user, (err) => {
       if (err) return next(err);
 
-      res.json({profile:req.user});
+      res.redirect('/profile');
     });
   })
   .catch((err) => { res.status(500).json({ status: 'error' }); });

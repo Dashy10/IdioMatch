@@ -14,7 +14,7 @@ var users = require('./routes/users');
 var auth = require('./routes/authRoutes');
 
 var app = express();
- app.use(cors());
+app.use(cors());
 
  // in app.js under `app.use(methodOverride('_method'))`
 app.use(session({

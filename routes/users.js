@@ -1,9 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const userRoutes = express.Router();
+const authHelpers = require('../services/auth/auth-helpers');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+
+userRoutes.get('/', authHelpers.loginRequired, (req, res) => {
+  res.json({ user: 'user profile page placeholder', userInfo: req.user });
 });
 
-module.exports = router;
+module.exports = userRoutes;

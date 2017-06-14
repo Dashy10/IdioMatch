@@ -17,5 +17,4 @@ router.get('/register', function(req, res, next) {
 });
 
 // api routes
-router.get('/api/users', db.getAllUsers)
 module.exports = router;

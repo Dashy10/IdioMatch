@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<% include ./partials/register_head %>
+<%- include('partials/register_head') %>
 
   <body>
     <ul class="menu align-center sticky-shrinknav-menu">
@@ -14,6 +14,7 @@
     <div class="login-box title-font title-font">
       <div class="login-box-form-section">
         <h1 class="login-box-title">Sign up</h1>
+        <form method='POST' action='/auth/register'>
         <input class="login-box-input" type="text" name="username" placeholder="Username" />
         <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
         <input class="login-box-input" type="password" name="password" placeholder="Password" />
@@ -22,6 +23,7 @@
         <input class="login-box-input" type="text" name="skype" placeholder="Skype" />
         <input class="login-box-input" type="text" name="whatsapp" placeholder="Whatsapp" />
         <input class="login-box-submit-button" type="submit" name="signup_submit" value="Sign me up" />
+      </form>
       </div>
     </div>
 

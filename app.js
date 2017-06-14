@@ -1,4 +1,6 @@
 require('dotenv').config();
+const session = require('express-session');
+const passport = require('passport');
 var cors = require('cors');
 var express = require('express');
 var path = require('path');
@@ -9,9 +11,20 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var auth = require('./routes/authRoutes');
 
 var app = express();
  app.use(cors());
+
+ // in app.js under `app.use(methodOverride('_method'))`
+app.use(session({
+  secret: process.env.SECRET_KEY,
+  resave: false,
+  saveUninitialized: true,
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -26,6 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/auth', auth);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -19,10 +19,10 @@ function createNewUser(req, res) {
   return User.create({
     username: req.body.username,
     password: hash,
-    email:req.body.email ,
-    main_language: req.body.main_language,
-    learning_language: req.body.learning_language,
-    skype: req.body.skype ,
+    email:req.body.email,
+    main: req.body.main,
+    learning: req.body.learning,
+    skype: req.body.skype,
     whatsapp: req.body.whatsapp
   });
 }

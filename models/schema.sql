@@ -10,10 +10,10 @@ CREATE TABLE users
   username VARCHAR(255),
   password VARCHAR(255),
   email VARCHAR(255),
-  main_language VARCHAR(255),
-  learning_language VARCHAR(255),
+  main TEXT NOT NULL,
+  learning TEXT NOT NULL,
   skype VARCHAR(255),
   whatsapp VARCHAR(12),
-  profile_pic TEXT,
+  pic TEXT,
   location TEXT
 );

@@ -17,7 +17,8 @@ router.get('/register', function(req, res, next) {
 });
 
 router.get('/profile', function(req, res, next) {
-  res.render('profile', {title: 'Express'});
+  console.log('res---', req.user)
+  res.render('profile', {title: 'Express', user: req.user});
 });
 
 

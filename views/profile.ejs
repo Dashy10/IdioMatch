@@ -4,13 +4,13 @@
 
   <body>
 
-    <form>
+    <form method="GET" action='/auth/login'>
       <div id='login-form' class="sign-in-form">
         <h4 class="text-center">Sign In<i class="fa fa-times-circle-o" aria-hidden="true" style="margin-left:130px;" onclick="hideLogin()"></i></h4>
-        <label for="sign-in-form-username">Username</label>
-        <input type="text" class="sign-in-form-username" id="sign-in-form-username">
-        <label for="sign-in-form-password">Password</label>
-        <input type="text" class="sign-in-form-password" id="sign-in-form-password">
+        <label for="sign-in-form-username" name="username">Username</label>
+        <input type="text" class="sign-in-form-username" id="sign-in-form-username" name="username">
+        <label name="password" for="sign-in-form-password">Password</label>
+        <input type="text" class="sign-in-form-password" id="sign-in-form-password" name="password">
         <button type="submit" class="sign-in-form-button">Sign In</button>
       </div>
     </form>
@@ -24,7 +24,10 @@
     </ul>
 
     <div class='page-wrap'>
-
+    <div id='profile-thingy'>Welcome <%= user.username %></div>
+    <form method="GET" action="auth/logout">
+    <button>Logout</button>
+  </form>
     </div>
 
     <footer class="site-footer">

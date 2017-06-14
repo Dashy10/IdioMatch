@@ -5,6 +5,7 @@ const authHelpers = require('../services/auth/auth-helpers');
 /* GET users listing. */
 
 userRoutes.get('/', authHelpers.loginRequired, (req, res) => {
+  res.locals.userInfo = req.user;
   res.json({ user: 'user profile page placeholder', userInfo: req.user });
 });
 

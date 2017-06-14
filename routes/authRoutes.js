@@ -30,8 +30,8 @@ authRouter.get('/login', authHelpers.loginRedirect, (req, res)=> {
 });
 
 authRouter.post('/login', passport.authenticate('local', {
-    successRedirect: '/user',
-    failureRedirect: 'login',
+    successRedirect: '/profile',
+    failureRedirect: '/matches',
     failureFlash: true
   })
 );

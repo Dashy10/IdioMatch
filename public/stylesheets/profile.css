@@ -4,6 +4,51 @@
   font-family: 'Lato', sans-serif;
 }
 
+#profile-card {
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 500px;
+  height:500px;
+  color: rgb(25, 181, 208);
+  background-color: rgb(42, 44, 43);
+  border-radius: 1.5em;
+}
+
+#match-results {
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 500px;
+  height:500px;
+  color: rgb(25, 181, 208);
+  background-color: rgb(42, 44, 43);
+  border-radius: 1.5em;
+}
+
+#logout {
+  background-color: rgb(25, 181, 208);
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 4%;
+  margin-top: 250px;
+}
+
+#logout:hover {
+  cursor: pointer;
+  background-color: rgb(57,201,258);
+}
+
+#flex-wrapper {
+  /*width:1000px;*/
+  display: flex;
+  /*margin: 0 auto;*/
+}
+
+
 .sign-in-form {
   display: none;
   z-index: 999;

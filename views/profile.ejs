@@ -4,7 +4,7 @@
 
   <body>
 
-    <form method="GET" action='/auth/login'>
+    <form action="auth/login" method="POST">
       <div id='login-form' class="sign-in-form">
         <h4 class="text-center">Sign In<i class="fa fa-times-circle-o" aria-hidden="true" style="margin-left:130px;" onclick="hideLogin()"></i></h4>
         <label for="sign-in-form-username" name="username">Username</label>
@@ -23,11 +23,25 @@
       <li class="title-font"><a href='./profile'>PROFILE</a></li>
     </ul>
 
-    <div class='page-wrap'>
-    <div id='profile-thingy'>Welcome <%= user.username %></div>
-    <form method="GET" action="auth/logout">
-    <button>Logout</button>
-  </form>
+    <div class='page-wrap title-font'>
+      <div id='flex-wrapper'>
+        <div id='profile-card'>
+          <h4 class='title-font'>Welcome back
+        <%= user.username %>!</h4>
+          <p>You speak:
+            <%= user.main %>
+          </p>
+          <p> You are learning:
+            <%= user.learning %>
+          </p>
+          <h4 class='title-font'>Check out your idiomatches on the right!</h4>
+          <form method="GET" action="auth/logout">
+            <button id='logout' class='title-font'>Logout</button>
+          </form>
+        </div>
+        <div id='match-results'></div>
+      </div>
+
     </div>
 
     <footer class="site-footer">

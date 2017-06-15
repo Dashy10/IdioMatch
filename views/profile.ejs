@@ -34,15 +34,22 @@
           <p> You are learning:
             <%= user.learning %>
           </p>
-          <h4 class='title-font'>Check out your idiomatches on the right!</h4>
+          <h4 class='title-font'>Check out your idiomatches below!</h4> French
+          <img class='flag-image hvr-wobble-vertical' src="../images/french_flag.png" onclick="showFrench()" /> English
+          <img class='flag-image hvr-wobble-vertical' src="../images/american_flag.png" onclick="showEnglish()" /> Spanish
+          <img class='flag-image hvr-wobble-vertical' src="../images/spain_flag.png" onclick="showSpanish()" /> Russian
+          <img class='flag-image hvr-wobble-vertical' src="../images/russia_flag.png" onclick="showRussian()" /> Icelandic
+          <img class='flag-image hvr-wobble-vertical' src="../images/iceland_flag.png" onclick="showIcelandic()" /> Czech
+          <img class='flag-image hvr-wobble-vertical' src="../images/czech_flag.png" onclick="showCzech()" />
           <form method="GET" action="auth/logout">
             <button id='logout' class='title-font'>Logout</button>
           </form>
         </div>
-        <% if(data){ %>
-          <% include ./partials/profile_match %>
-            <%} %>
-
+        <div id='data-container'>
+          <% if(data){ %>
+            <% include ./partials/profile_match %>
+              <%} %>
+        </div>
       </div>
 
 

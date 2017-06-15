@@ -39,8 +39,12 @@
             <button id='logout' class='title-font'>Logout</button>
           </form>
         </div>
-        <div id='match-results'></div>
+        <% if(data){ %>
+          <% include ./partials/profile_match %>
+            <%} %>
+
       </div>
+
 
     </div>
 

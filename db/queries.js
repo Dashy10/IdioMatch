@@ -27,5 +27,6 @@ getUser = (req,res,next) => {
 
 module.exports = {
   getAllUsers: getAllUsers,
-  getAllUsersProfile: getAllUsersProfile
+  getAllUsersProfile: getAllUsersProfile,
+  getUser: getUser,
 }

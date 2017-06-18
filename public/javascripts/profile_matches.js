@@ -1,4 +1,5 @@
-console.log('matches.js is here')
+console.log('profilematches.js is here');
+
 
 function showFrench() {
   $('.english').css("display", "block");

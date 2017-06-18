@@ -1,12 +1,10 @@
-/*BEGIN: YET TO BE ORGANIZED*/
+
+
 /*padding for hero cover*/
 
 body {
   padding-top: 370px;
 }
-/*END: YET TO BE ORGANIZED*/
-
-
 
 
 /* BEGIN: LOGIN IN FORM */
@@ -318,7 +316,9 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
   margin: 0;
 }
 
+
 /*BEGIN: FOOTER AND SOCIAL MEDIA BUTTONS*/
+
 .footer {
   background-color: rgb(42, 44, 43);
   color: #fff;
@@ -399,4 +399,6 @@ body.sticky-shrinknav-wrapper .sticky-shrinknav-header .sticky-shrinknav-header-
   background: #fefefe;
   border-color: #000000;
 }
+
+
 /*END: FOOTER AND SOCIAL MEDIA BUTTONS*/

@@ -26,6 +26,8 @@ router.get('/profile',function(req, res, next) {
   })
 });
 
+router.get('/api/users/:main', db.getUserbyMainLanguage);
+
 
 // api routes
 module.exports = router;

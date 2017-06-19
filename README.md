@@ -37,8 +37,6 @@ inputing my name, main language, and learning language.
 - I want to see support for at least 6 languages.
 - I want to see an about page that tells me more information about the application. I want to see language learning statistics on this page as well as basic statistics regarding the application. 
 
-## Wireframes
-
 ## Pseudocode
 
 **Filtration System:**
@@ -87,8 +85,6 @@ For each matching_user; render
 
 ```
 
-## Project Timetable
-
 
 ## Database Structure
 
@@ -113,8 +109,6 @@ For each matching_user; render
 - GoogleMaps API
 - Animate.css
 - Passport.js/Open Auth
-
-## Code Example
 
 ## Future Improvements
 

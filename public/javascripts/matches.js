@@ -1,5 +1,6 @@
 console.log('matches.js is here')
 
+// display based on class names
 function showFrench() {
   $('.english').css("display", "block");
   $('.spanish').css("display", "block");

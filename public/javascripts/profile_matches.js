@@ -1,6 +1,6 @@
 console.log('profilematches.js is here');
 
-
+// display based on class name
 function showFrench() {
   $('.english').css("display", "block");
   $('.spanish').css("display", "block");

@@ -3,7 +3,7 @@
 <% include ./partials/profile_head %>
 
   <body>
-
+    <%#login form posts to our auth/login route; which then authenticates user based on local strategy  %>
     <form action="auth/login" method="POST">
       <div id='login-form' class="sign-in-form">
         <h4 class="text-center">Sign In<i class="fa fa-times-circle-o" aria-hidden="true" style="margin-left:130px;" onclick="hideLogin()"></i></h4>
@@ -15,13 +15,21 @@
       </div>
     </form>
 
+    <% if(user) { %>
+      <ul class="menu align-center sticky-shrinknav-menu">
+          <li class='title-font' style="font-size:20pt"><a href="./">IdioMatch</a></li>
+          <li class="title-font"><a href="./matches">HOW IT WORKS</a></li>
+          <li class="title-font"><a href="./register">SIGN UP</a></li>
+          <li class="title-font"><a href='./profile'>PROFILE</a></li>
+
+      </ul>
+    <%} else { %>
     <ul class="menu align-center sticky-shrinknav-menu">
-      <li class='title-font' style="font-size:20pt"><a href="/">IdioMatch</a></li>
+      <li class='title-font' style="font-size:20pt"><a href="./">IdioMatch</a></li>
       <li class="title-font"><a href="./matches">HOW IT WORKS</a></li>
       <li class="title-font"><a href="./register">SIGN UP</a></li>
       <li class="title-font"><a onclick="showLogin()">LOGIN</a></li>
-      <li class="title-font"><a href='./profile'>PROFILE</a></li>
-    </ul>
+      <% } %>
 
     <div class='page-wrap title-font'>
       <div id='flex-wrapper'>

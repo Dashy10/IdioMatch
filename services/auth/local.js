@@ -8,7 +8,7 @@ const authHelpers = require('./auth-helpers');
 const options = {};
 
 init();
-
+// authenticates the user based upon this specific strategy
 passport.use(
   new LocalStrategy(options, (username, password, done) => {
     User.findByUserName(username)

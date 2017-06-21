@@ -14,14 +14,21 @@
       </div>
     </form>
 
+    <% if(user) { %>
+      <ul class="menu align-center sticky-shrinknav-menu">
+          <li class='title-font' style="font-size:20pt"><a href="./">IdioMatch</a></li>
+          <li class="title-font"><a href="./matches">HOW IT WORKS</a></li>
+          <li class="title-font"><a href="./register">SIGN UP</a></li>
+          <li class="title-font"><a href='./profile'>PROFILE</a></li>
+
+      </ul>
+    <%} else { %>
     <ul class="menu align-center sticky-shrinknav-menu">
-      <li class='title-font' style="font-size:20pt"><a href="/">IdioMatch</a></li>
+      <li class='title-font' style="font-size:20pt"><a href="./">IdioMatch</a></li>
       <li class="title-font"><a href="./matches">HOW IT WORKS</a></li>
       <li class="title-font"><a href="./register">SIGN UP</a></li>
       <li class="title-font"><a onclick="showLogin()">LOGIN</a></li>
-      <li class="title-font"><a href='./profile'>PROFILE</a></li>
-    </ul>
-
+      <% } %>
       <div class="page-wrap">
 
         <div id='clear-flags'></div>

@@ -13,7 +13,7 @@ CREATE TABLE users
   main TEXT NOT NULL,
   learning TEXT NOT NULL,
   skype VARCHAR(255),
-  whatsapp VARCHAR(12),
+  whatsapp VARCHAR(255),
   pic TEXT,
   location TEXT
 );

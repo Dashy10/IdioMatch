@@ -4,7 +4,8 @@ getAllUsers = (req, res, next) => {
   db.any('SELECT * FROM users').then(function(data) {
     res.render('matches', {
       title: "Express",
-      data: data
+      data: data,
+      user: req.user
     })
     console.log((data[0].username));
   });
